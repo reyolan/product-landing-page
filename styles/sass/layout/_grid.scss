@@ -1,0 +1,24 @@
+html {
+	scroll-behavior: smooth;
+}
+
+#hero {
+	margin-top: 64px;
+	min-height: 800px;
+	background: lightgray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 1.4rem;
+}
+
+.feature {
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 800px;
+
+	:first-of-type {
+		background: yellow;
+	}
+}

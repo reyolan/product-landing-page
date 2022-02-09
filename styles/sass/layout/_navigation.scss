@@ -1,0 +1,45 @@
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: gray;
+	padding: 0 1.4rem;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	gap: 0 1.6rem;
+}
+
+#header {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: gray;
+	height: 64px;
+	top: 0;
+
+	> img {
+		width: 48px;
+		height: auto;
+	}
+}
+
+#menu-toggle {
+	display: none;
+}
+
+#nav-bar {
+	display: none;
+}
+
+#menu-button-container {
+	cursor: pointer;
+}
+
+#menu-toggle:checked ~ #nav-bar {
+	display: block;
+}
