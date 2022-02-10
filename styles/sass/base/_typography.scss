@@ -6,3 +6,21 @@ a {
 	text-decoration: none;
 	color: white;
 }
+
+#nav-bar {
+	font-size: 1.5rem;
+}
+
+#hero {
+	color: white;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+.description {
+	> a {
+		color: rgb(21, 27, 38);
+	}
+}

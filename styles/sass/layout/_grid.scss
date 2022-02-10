@@ -2,12 +2,16 @@ html {
 	scroll-behavior: smooth;
 }
 
+body {
+	background: rgb(13, 27, 47);
+}
+
 #hero {
 	margin-top: 64px;
 	min-height: 800px;
-	background: lightgray;
+	background: rgb(13, 27, 47);
 	display: flex;
-	justify-content: center;
+
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 0 1.4rem;
@@ -15,10 +19,26 @@ html {
 
 .feature {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
 	min-height: 800px;
+	background: white;
+}
 
-	:first-of-type {
-		background: yellow;
+.description {
+	padding: 1rem;
+
+	> a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: max-content;
+		background: white;
+		border-radius: 5px;
+		height: 2rem;
+		padding: 0.5em;
+		cursor: pointer;
 	}
 }
