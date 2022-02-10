@@ -1,44 +1,84 @@
+@use "../abstracts/mixins" as *;
+
 html {
 	scroll-behavior: smooth;
+	scroll-padding-top: 64px;
 }
 
 body {
 	background: rgb(13, 27, 47);
 }
 
+iframe {
+	width: 400px;
+}
+
 #hero {
 	margin-top: 64px;
-	min-height: 800px;
+	min-height: 71vh;
 	background: rgb(13, 27, 47);
-	display: flex;
+	@include flex-center;
+	padding: 6rem 0;
+}
 
-	align-items: center;
-	flex-wrap: wrap;
-	padding: 0 1.4rem;
+#stats {
+	min-height: 20vh;
+	background: white;
+	@include flex-center;
 }
 
 .feature {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	min-height: 800px;
 	background: white;
+	min-height: 71vh;
+	border: solid green 1px;
+	@include flex-center;
+	padding: 6rem 0;
 }
 
-.description {
-	padding: 1rem;
+.container {
+	width: max(310px, 80vw);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1.4rem;
+	gap: 4rem 0;
+	flex-wrap: wrap;
+	border: solid red 1px;
+}
 
+#stats-container {
+	width: max(310px, 80vw);
+	@include flex-center;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+#text-stats {
+	display: flex;
+}
+
+#hero-text {
+	max-width: 65ch;
 	> a {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: max-content;
+		@include flex-center;
+		width: fit-content;
 		background: white;
 		border-radius: 5px;
 		height: 2rem;
-		padding: 0.5em;
+		padding: 1em;
 		cursor: pointer;
+		font-size: 1.8rem;
+	}
+}
+
+.description {
+	max-width: 65ch;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+	> h1 {
+		font-weight: 400;
+		font-size: 3.2rem;
 	}
 }

@@ -6,69 +6,133 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>DIALux EVO</title>
 		<link rel="stylesheet" href="styles/style.css" />
-		<link rel="icon" href="img/Dx_Logo.svg">
+		<link rel="icon" href="img/Dx_Logo.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div id="main-container">
 			<header id="header">
-				<img src="img/Dx_Logo.svg" id="header-img" />
-				<input id="menu-toggle" type="checkbox" />
-				<label class="menu-button-container" for="menu-toggle">
-					<div class="menu-button"></div>
-				</label>
-				<nav id="nav-bar">
-					<ul>
-						<li class="nav-link"><a href="#hero">Home</a></li>
-						<li class="nav-link"><a href="#first-feature">Features</a></li>
-						<li class="nav-link"><a href="#">Subscribe</a></li>
-					</ul>
-				</nav>
+				<div id="header-container">
+					<img src="img/Dx_Logo.svg" id="header-img" />
+					<input id="menu-toggle" type="checkbox" />
+					<label class="menu-button-container" for="menu-toggle">
+						<div class="menu-button"></div>
+					</label>
+					<nav id="nav-bar">
+						<ul>
+							<li class="nav-link"><a href="#hero">Home</a></li>
+							<li class="nav-link"><a href="#first-feature">Features</a></li>
+							<li class="nav-link"><a href="#">Subscribe</a></li>
+						</ul>
+					</nav>
+				</div>
 			</header>
 			<section id="hero">
-				<div class="description">
-					<h1>DIALux EVO</h1>
-					<p>Light up the world with our superior lighting software</p>
-					<a href=#>Try for free</a>
+				<div class="container">
+					<div id="hero-text">
+						<span>Lighting Design</span>
+						<h1>Light up the world and lighten it with greatness</h1>
+						<p>
+							The art of lighting shall always follow specific standards, taking
+							care of those requirements while designing can get messy. You can
+							fix that with DIALux Software.
+						</p>
+						<a href="#">Try for free</a>
+					</div>
+					<iframe
+						id="video"
+						width="360"
+						height="240"
+						src="https://www.youtube.com/embed/07YBwuBVPso?autoplay=1&mute=1"
+						title="DIALux Preview Video"
+						frameborder="0"
+						allowfullscreen
+					></iframe>
 				</div>
-				<iframe
-					id="video"
-					width="560"
-					height="315"
-					src="https://www.youtube.com/embed/07YBwuBVPso?autoplay=1&mute=1"
-					title="DIALux Preview Video"
-					frameborder="0"
-					allowfullscreen
-				></iframe>
-			</div>
+			</section>
+			<section id="stats">
+				<div id="stats-container">
+					<p>See why more than 750K users trust DIALux software.</p>
+					<div id="text-stats">
+						<div class="text">
+							<p>25</p>
+							<p>languages available</p>
+						</div>
+						<div class="text">
+							<p>60M</p>
+							<p>luminaires used per month</p>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="feature" id="first-feature">
-				<div class="img-overlap">
-					<img src="https://via.placeholder.com/300x180">
-				</div>
-				<div class="description">
-					<span>Open source</span>
-					<h2>Use the software for personal, educational and commercial purposes</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis condimentum dignissim. Vestibulum iaculis nulla eros. Aenean ornare, nisi a faucibus faucibus, quam neque ullamcorper mi, ut aliquet erat risus vel mauris. Phasellus pulvinar gravida porttitor. Donec convallis mattis lorem non sodales. Quisque lectus orci, convallis sed sapien ac, ultrices sagittis urna. Sed vitae viverra dolor, id auctor leo. Aenean consectetur orci non ipsum euismod venenatis. Cras commodo libero sapien, eu tempus justo commodo eget. Sed eget condimentum elit. Proin risus sem, dapibus quis ornare ut, tristique tempor mi. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin eu sapien bibendum, convallis ligula faucibus, sollicitudin augue.</p>
+				<div class="container">
+					<div class="img-overlap">
+						<img src="https://via.placeholder.com/300x180" />
+					</div>
+					<div class="description">
+						<span>Open source</span>
+						<h2>
+							Use the software for personal, educational and commercial purposes
+						</h2>
+						<p>
+							Create lighting layouts with DIALux free of charge. Make it easy
+							for others to edit your work.
+						</p>
+					</div>
 				</div>
 			</section>
 			<section class="feature">
-				<div class="description">
-					<span>Light up the world</span>
-					<h2>Illuminate the world with DIALux</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis condimentum dignissim. Vestibulum iaculis nulla eros. Aenean ornare, nisi a faucibus faucibus, quam neque ullamcorper mi, ut aliquet erat risus vel mauris. Phasellus pulvinar gravida porttitor. Donec convallis mattis lorem non sodales. Quisque lectus orci, convallis sed sapien ac, ultrices sagittis urna. Sed vitae viverra dolor, id auctor leo. Aenean consectetur orci non ipsum euismod venenatis. Cras commodo libero sapien, eu tempus justo commodo eget. Sed eget condimentum elit. Proin risus sem, dapibus quis ornare ut, tristique tempor mi. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin eu sapien bibendum, convallis ligula faucibus, sollicitudin augue.</p>
+				<div class="container">
+					<div class="description">
+						<span>Light up the world</span>
+						<h2>Illuminate the world with DIALux</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+							mollis condimentum dignissim. Vestibulum iaculis nulla eros.
+							Aenean ornare, nisi a faucibus faucibus, quam neque ullamcorper
+							mi, ut aliquet erat risus vel mauris. Phasellus pulvinar gravida
+							porttitor. Donec convallis mattis lorem non sodales. Quisque
+							lectus orci, convallis sed sapien ac, ultrices sagittis urna. Sed
+							vitae viverra dolor, id auctor leo.
+						</p>
+					</div>
+					<div class="img-overlap">
+						<img src="https://via.placeholder.com/300x180" />
+					</div>
 				</div>
-				<img src="https://via.placeholder.com/300x180">
 			</section>
 			<section class="feature">
-				<img src="https://via.placeholder.com/300x180">
-				<div class="description">
-					<span>Reliable Software</span>
-					<h2>Made for lighting designers and luminaire manufacturers</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis condimentum dignissim. Vestibulum iaculis nulla eros. Aenean ornare, nisi a faucibus faucibus, quam neque ullamcorper mi, ut aliquet erat risus vel mauris. Phasellus pulvinar gravida porttitor. Donec convallis mattis lorem non sodales. Quisque lectus orci, convallis sed sapien ac, ultrices sagittis urna. Sed vitae viverra dolor, id auctor leo. Aenean consectetur orci non ipsum euismod venenatis. Cras commodo libero sapien, eu tempus justo commodo eget. Sed eget condimentum elit. Proin risus sem, dapibus quis ornare ut, tristique tempor mi. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin eu sapien bibendum, convallis ligula faucibus, sollicitudin augue.</p>
+				<div class="container">
+					<div class="img-overlap">
+						<img src="https://via.placeholder.com/300x180" />
+					</div>
+					<div class="description">
+						<span>Reliable Software</span>
+						<h2>Made for lighting designers and luminaire manufacturers</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+							mollis condimentum dignissim. Vestibulum iaculis nulla eros.
+							Aenean ornare, nisi a faucibus faucibus, quam neque ullamcorper
+							mi, ut aliquet erat risus vel mauris. Phasellus pulvinar gravida
+							porttitor. Donec convallis mattis lorem non sodales. Quisque
+							lectus orci, convallis sed sapien ac, ultrices sagittis urna. Sed
+							vitae viverra dolor, id auctor leo.
+						</p>
+					</div>
 				</div>
 			</section>
-			<div class='form'>
+			<div class="form">
 				<p>Ready to get started?</p>
-				<p>Subscribe to receive regular updates about the software via email.</p>
+				<p>
+					Subscribe to receive regular updates about the software via email.
+					We'll share more and give you access to future beta versions.
+				</p>
 				<form action="#" method="get" id="form">
 					<label for="email">Email:</label>
 					<input
@@ -77,7 +141,7 @@
 						placeholder="example123@domain.com"
 						pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
 					/>
-					<button type="submit" id="submit">Submit</button>
+					<button type="submit" id="submit">Subscribe</button>
 				</form>
 			</div>
 		</div>

@@ -28,3 +28,4 @@
 
 // email is submitted to a dynamic page (challenge for the improvement)
 // I guess lagay tayo na E-mail submitted, redirecting to previous page in 5 4 3 2 1 seconds (?)
+// send to another repo, another folder

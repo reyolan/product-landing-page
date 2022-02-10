@@ -2,17 +2,25 @@ html {
 	font-size: 62.5%;
 }
 
+body {
+	font-family: "Roboto", sans-serif;
+}
+
 a {
 	text-decoration: none;
 	color: white;
 }
 
 #nav-bar {
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 }
 
 #hero {
 	color: white;
+}
+
+h1 {
+	font-size: 4rem;
 }
 
 h2 {
@@ -20,6 +28,18 @@ h2 {
 }
 
 .description {
+	> p {
+		font-size: 2rem;
+	}
+}
+
+#hero-text {
+	> span {
+		font-size: 1.3rem;
+	}
+	> p {
+		font-size: 1.6rem;
+	}
 	> a {
 		color: rgb(21, 27, 38);
 	}
