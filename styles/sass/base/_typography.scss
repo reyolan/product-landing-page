@@ -23,24 +23,91 @@ h1 {
 	font-size: 4rem;
 }
 
-h2 {
-	font-size: 3rem;
-}
-
+#hero-text,
 .description {
+	> span {
+		font-size: 1.6rem;
+		font-weight: 500;
+	}
+
+	> h1 {
+		font-weight: 400;
+	}
 	> p {
+		font-size: 2rem;
+		line-height: 1.5;
+	}
+	> a {
+		color: rgb(21, 27, 38);
 		font-size: 2rem;
 	}
 }
 
 #hero-text {
-	> span {
-		font-size: 1.3rem;
-	}
 	> p {
-		font-size: 1.6rem;
+		max-width: 45ch;
 	}
-	> a {
-		color: rgb(21, 27, 38);
+
+	> h1 {
+		max-width: 20ch;
 	}
+}
+
+.description {
+	> span {
+		color: rgb(132, 143, 153);
+	}
+
+	> p {
+		color: rgb(132, 143, 153);
+	}
+
+	> h2 {
+		font-size: 3.4rem;
+		font-weight: 400;
+	}
+}
+
+#stats-container {
+	> p {
+		font-size: 4rem;
+		font-weight: 300;
+	}
+
+	.text {
+		> p:first-child {
+			font-size: 5rem;
+			font-weight: 700;
+		}
+
+		> p:nth-child(2) {
+			font-size: 2rem;
+		}
+	}
+}
+
+.form {
+	> p {
+		color: white;
+		font-size: 2.3rem;
+		line-height: 1.5;
+		font-weight: 300;
+	}
+	> h2 {
+		color: white;
+		font-size: 5rem;
+		font-weight: 300;
+	}
+}
+
+#form {
+	color: white;
+
+	> input {
+		font-size: 2rem;
+	}
+}
+
+footer {
+	color: white;
 }

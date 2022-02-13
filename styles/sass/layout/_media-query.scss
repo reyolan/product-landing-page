@@ -1,0 +1,19 @@
+@media (max-width: 48em) {
+	#hero-container,
+	.container,
+	#stats-container,
+	#header-container,
+	.form {
+		width: calc(100% - 32px);
+	}
+}
+
+@media (max-width: 76.8em) {
+	#hero-container,
+	.container,
+	#stats-container,
+	#header-container,
+	.form {
+		width: calc(100% - 96px);
+	}
+}

@@ -1,0 +1,10 @@
+@use "../abstracts/mixins" as *;
+
+footer {
+	background-color: rgb(35, 35, 35);
+}
+
+#footer-container {
+	width: max(320px, 70vw);
+	@include flex-center;
+}

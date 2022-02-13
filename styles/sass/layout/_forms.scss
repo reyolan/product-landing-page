@@ -1,7 +1,22 @@
+@use "../abstracts/mixins" as *;
+
 .form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 400px;
+	width: calc(100% - 128px);
+	max-width: 1312px;
+	text-align: center;
+	> p {
+		max-width: 65ch;
+		margin: 0 auto;
+	}
 }
+
+// #email {
+// 	height: 5rem;
+// 	width: 26rem;
+// }
+
+// #submit {
+// 	height: 5rem;
+// 	font-size: 1.6rem;
+// 	padding: 0.8rem 2rem;
+// }
