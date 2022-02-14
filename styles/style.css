@@ -26,12 +26,6 @@ a {
   color: white;
 }
 
-a:hover {
-  color: #d4d4d4;
-  transition: 0.4s;
-  border-bottom: solid #d4d4d4 1px;
-}
-
 #nav-bar {
   font-size: 1.8rem;
 }
@@ -42,6 +36,12 @@ a:hover {
 
 h1 {
   font-size: 4rem;
+}
+
+a:hover {
+  color: #d4d4d4;
+  transition: 0.4s;
+  border-bottom: solid #d4d4d4 1px;
 }
 
 #hero-text > span,
@@ -58,10 +58,14 @@ h1 {
   font-size: 2rem;
   line-height: 1.5;
 }
-#hero-text > a,
-.description > a {
+
+#hero-text > a {
   color: #151b26;
   font-size: 2rem;
+}
+#hero-text > a:hover {
+  opacity: 0.8;
+  transition: 0.4s;
 }
 
 .description > span {
@@ -286,8 +290,7 @@ video {
   width: fit-content;
   background: white;
   border-radius: 5px;
-  height: 2rem;
-  padding: 1.3em;
+  padding: 0.8em 1.3em;
   cursor: pointer;
 }
 
@@ -393,7 +396,8 @@ footer {
 }
 
 #submit:hover {
-  background-color: #e0e6e8;
+  opacity: 0.8;
+  transition: 0.4s;
 }
 
 @media screen and (max-width: 48em) {
