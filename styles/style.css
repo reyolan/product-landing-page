@@ -26,6 +26,12 @@ a {
   color: white;
 }
 
+a:hover {
+  color: #d4d4d4;
+  transition: 0.4s;
+  border-bottom: solid #d4d4d4 1px;
+}
+
 #nav-bar {
   font-size: 1.8rem;
 }
@@ -56,13 +62,6 @@ h1 {
 .description > a {
   color: #151b26;
   font-size: 2rem;
-}
-
-#hero-text > p {
-  max-width: 45ch;
-}
-#hero-text > h1 {
-  max-width: 20ch;
 }
 
 .description > span {
@@ -106,9 +105,27 @@ h1 {
 #form > input {
   font-size: 2rem;
 }
+#form > #submit {
+  color: #151b26;
+  font-size: 2rem;
+}
 
 footer {
   color: white;
+}
+
+#footer-container > p:first-child {
+  font-size: 5rem;
+  font-weight: 300;
+}
+#footer-container span {
+  font-weight: 700;
+}
+#footer-container a {
+  color: #9c9b9a;
+}
+#footer-container .footer-text {
+  font-size: 1.6rem;
 }
 
 #nav-bar > ul {
@@ -139,7 +156,6 @@ footer {
 }
 #header-container > img {
   width: 48px;
-  height: auto;
 }
 
 .menu-button-container {
@@ -255,7 +271,7 @@ body {
 video {
   height: auto;
   border-radius: 5px;
-  width: 100%;
+  max-width: 100%;
 }
 
 #hero {
@@ -264,7 +280,7 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12rem 0;
+  padding: 14rem 0;
 }
 
 #stats {
@@ -288,10 +304,9 @@ video {
   width: calc(100% - 128px);
   max-width: 1312px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   align-items: center;
-  gap: 5rem 3.5rem;
-  border: solid red 1px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 5rem 10rem;
 }
 
 #stats-container {
@@ -306,8 +321,6 @@ video {
 }
 #stats-container #text-stats {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   gap: 5rem 20rem;
 }
@@ -330,7 +343,6 @@ video {
 }
 
 .description {
-  max-width: 100ch;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -347,28 +359,13 @@ img {
   max-width: 100%;
 }
 
-.img-overlap-left,
-.img-overlap-right {
+.img-overlap-left {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   position: relative;
 }
-.img-overlap-left > img,
-.img-overlap-right > img {
+.img-overlap-left > img {
   border-radius: 5px;
-}
-
-.img-overlap-right > img:first-child {
-  grid-column: 1/span 8;
-  grid-row: 1;
-  padding-top: 30%;
-  z-index: 1;
-  box-shadow: 0px 6px 2px -2px lightgray;
-}
-.img-overlap-right > img:nth-child(2) {
-  grid-column: 4/-1;
-  grid-row: 1;
-  box-shadow: 2px 6px 2px -2px lightgray;
 }
 
 .img-overlap-left > img:first-child {
@@ -384,22 +381,37 @@ img {
   box-shadow: 0 6px 2px -2px lightgray;
 }
 
+#img-right {
+  box-shadow: 2px 6px 2px -2px lightgray;
+  border-radius: 5px;
+}
+
 #newsletter {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10rem 0;
+  padding: 11rem 0;
 }
 
 footer {
-  background-color: #232323;
-}
-
-#footer-container {
-  width: max(320px, 70vw);
+  background-color: #0d0e10;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 9rem 0;
+}
+
+#footer-container {
+  width: calc(100% - 128px);
+  max-width: 1312px;
+  display: flex;
+  flex-direction: column;
+}
+#footer-container > p:first-child {
+  margin-bottom: 4rem;
+}
+#footer-container > .footer-text {
+  margin-bottom: 1rem;
 }
 
 .form {
@@ -409,25 +421,50 @@ footer {
 }
 .form > p {
   max-width: 65ch;
-  margin: 0 auto;
+  margin: 1rem auto 0;
 }
 
-@media (max-width: 48em) {
+#form {
+  margin-top: 1.5rem;
+}
+#form > #email {
+  padding: 0.8rem;
+  width: 30rem;
+  border-radius: 5px;
+  border: solid gray 2px;
+}
+#form > #submit {
+  padding: 0.8rem 2rem;
+  background-color: white;
+  border: 0;
+  margin-left: 0.8rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  border-radius: 5px;
+}
+
+#submit:hover {
+  background-color: #e0e6e8;
+}
+
+@media screen and (max-width: 76.8rem) {
   #hero-container,
 .container,
 #stats-container,
 #header-container,
-.form {
-    width: calc(100% - 32px);
+.form,
+#footer-container {
+    width: calc(100% - 96px);
   }
 }
-@media (max-width: 76.8em) {
+@media screen and (max-width: 48rem) {
   #hero-container,
 .container,
 #stats-container,
 #header-container,
-.form {
-    width: calc(100% - 96px);
+.form,
+#footer-container {
+    width: calc(100% - 32px);
   }
 }
 

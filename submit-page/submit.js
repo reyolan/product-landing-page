@@ -9,13 +9,13 @@
 	}
 })();
 
-(function () {
-	let initialTime = 5;
-	setInterval(() => {
-		initialTime--;
-		document.querySelector("[data-time]").textContent = initialTime;
-		if (initialTime === 0) window.close();
-	}, 1000);
-})();
+// (function () {
+// 	let initialTime = 5;
+// 	setInterval(() => {
+// 		initialTime--;
+// 		document.querySelector("[data-time]").textContent = initialTime;
+// 		if (initialTime === 0) window.close();
+// 	}, 1000);
+// })();
 
 // setInterval(function, 1000)

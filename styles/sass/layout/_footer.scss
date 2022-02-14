@@ -1,10 +1,21 @@
 @use "../abstracts/mixins" as *;
 
 footer {
-	background-color: rgb(35, 35, 35);
+	background-color: rgb(13, 14, 16);
+	@include flex-center;
+	padding: 9rem 0;
 }
 
 #footer-container {
-	width: max(320px, 70vw);
-	@include flex-center;
+	@include main-container-width;
+	display: flex;
+	flex-direction: column;
+
+	> p:first-child {
+		margin-bottom: 4rem;
+	}
+
+	> .footer-text {
+		margin-bottom: 1rem;
+	}
 }

@@ -18,16 +18,13 @@
 }
 
 #header-container {
-	// border: solid red 1px;
-	width: calc(100% - 128px);
-	max-width: 1312px;
+	@include main-container-width;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 
 	> img {
 		width: 48px;
-		height: auto;
 	}
 }
 
@@ -42,7 +39,6 @@
 }
 
 #menu-toggle {
-	//checkbox mismo
 	display: none;
 }
 
