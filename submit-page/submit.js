@@ -10,7 +10,7 @@
 })();
 
 (function () {
-	let initialTime = 5;
+	let initialTime = 10;
 	setInterval(() => {
 		initialTime--;
 		document.querySelector("[data-time]").textContent = initialTime;
