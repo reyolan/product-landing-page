@@ -42,8 +42,6 @@ video {
 	align-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	gap: 5rem 10rem;
-	// each column shall have minimum column track size of 500px and a maximum of 1fr.
-	// if we did not meet the minmax function, then the grid will wrap.
 }
 
 #stats-container {
