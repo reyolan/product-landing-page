@@ -17,5 +17,3 @@
 		if (initialTime === 0) window.close();
 	}, 1000);
 })();
-
-// setInterval(function, 1000)
