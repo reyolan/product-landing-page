@@ -10,7 +10,9 @@ html {
 
 body {
 	font-family: "Roboto", sans-serif;
-	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	min-height: 60vh;
 }
 
 #container {
