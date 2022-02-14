@@ -115,7 +115,7 @@ footer {
 }
 
 #footer-container > p:first-child {
-  font-size: 5rem;
+  font-size: 4.8rem;
   font-weight: 300;
 }
 #footer-container span {
@@ -125,7 +125,7 @@ footer {
   color: #9c9b9a;
 }
 #footer-container .footer-text {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 #nav-bar > ul {
