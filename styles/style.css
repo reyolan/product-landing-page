@@ -396,7 +396,7 @@ footer {
   transition: 0.4s;
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 768px) {
   #hero-container,
 .container,
 #stats-container,
@@ -406,7 +406,7 @@ footer {
     width: calc(100% - 96px);
   }
 }
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 480px) {
   #hero-container,
 .container,
 #stats-container,
